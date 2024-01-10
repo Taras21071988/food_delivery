@@ -3,6 +3,8 @@
   background: var(--green);
   width: 1200px;
   height: 450px;
+  position: relative;
+  
 
   .personal__text {
     display: flex;
@@ -41,5 +43,42 @@
         color: var(--green);
       }
     }
+  }
+  .personal__img-mint-big {
+    position: absolute;
+    top: -140px;
+    left: 380px;
+  }
+  .personal__img-mint-small {
+    position: absolute;
+    bottom: -140px;
+    left: -100px;
+  }
+  .personal__img-vector {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+  }
+  .personal__img-plate {
+    position: absolute;
+    top: 0;
+    right: -60px;
+    max-width: 866px;
+    z-index: 10;
+  }
+  .personal__img-plateShadow {
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+  .personal__img-pepper {
+    position: absolute;
+    bottom: -135px;
+    right: -100px;
+  }
+  .personal__img-leaf {
+    position: absolute;
+    bottom: -75px;
+    left: 500px;
   }
 }
