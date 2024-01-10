@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+
+  a {
+    font-weight: 500;
+    color: var(--text-color-accent);
+    line-height: 100%;
+    font-size: 16px;
+  }
+  .nav__phone {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    img {
+      margin-right: 5px;
+    }
+  }
+}
