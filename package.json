@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "air-datepicker": "^3.4.0",
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "swiper": "^11.0.5"
   },
   "babel": {
     "presets": [

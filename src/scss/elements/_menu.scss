@@ -1,0 +1,45 @@
+.menu {
+  margin-bottom: 100px;
+  .menu__title {
+    margin-bottom: 40px;
+
+    color: #000;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    text-transform: uppercase;
+  }
+  .menu__wrapper {
+    background-color: var(--green);
+    border-radius: 20px;
+    width: 1200px;
+    height: 700px;
+    padding: 42px 42px;
+    .swiper__wrapper {
+      position: relative;
+      height: 340px;
+      background-color: red;
+      &::before {
+        content: "";
+        background-image: url(../img/menu/gradient_left.png);
+        width: 80px;
+        height: 340px;
+        display: block;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      &::after {
+        content: "";
+        background-image: url(../img/menu/gradient_right.png);
+        width: 70px;
+        height: 340px;
+        display: block;
+        top: 0;
+        right: 0;
+        position: absolute;
+      }
+    }
+  }
+}
