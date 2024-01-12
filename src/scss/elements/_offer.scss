@@ -1,0 +1,49 @@
+.offer {
+  background-color: var(--green);
+  margin-bottom: 100px;
+  position: relative;
+  .offer__wrapper {
+    padding: 21px 0 35px;
+    .offer__content {
+      display: flex;
+      flex-direction: column;
+      width: 388px;
+      color: var(--page-bg);
+      .offer__title {
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 17px;
+        line-height: 120%; /* 48px */
+      }
+      .offer__text {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 17px;
+      }
+      .offer__link {
+        border-radius: 32px;
+        width: 182px;
+        background-color: var(--accent);
+        color: var(--page-bg);
+        text-align: center;
+        padding: 18px 27px;
+        transition: all 0.5s ease-in;
+        &:hover {
+          color: var(--green);
+          background-color: var(--page-bg);
+        }
+      }
+    }
+  }
+  .offer__food-img {
+    position: absolute;
+    top: -105px;
+    right: 340px;
+  }
+  .offer__vegetables-img {
+    position: absolute;
+    top: -40px;
+    right: 0;
+  }
+}
