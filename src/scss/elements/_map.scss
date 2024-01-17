@@ -1,0 +1,17 @@
+.map__section {
+  margin-bottom: 100px;
+  .map {
+    .map__wrapper {
+      .map__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      .map__image {
+        border-radius: 22px;
+      }
+    }
+  }
+}
