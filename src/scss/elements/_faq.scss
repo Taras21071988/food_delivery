@@ -1,0 +1,105 @@
+.faq__section {
+  margin-bottom: 60px;
+  .faq {
+    .faq__wrapper {
+      display: flex;
+      flex-direction: column;
+      .faq__title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+        text-transform: uppercase;
+      }
+      .faq__chapter {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 21px;
+        margin-bottom: 40px;
+        .faq__chapter-items {
+          border-radius: 28px;
+          background: #f4f4f4;
+          box-shadow: 0px 0px 11px -4px rgba(0, 0, 0, 0.25);
+          width: 183px;
+          height: 165px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 25px;
+          transition: 0.5s ease-in-out;
+          svg {
+            path {
+              transition: all 0.5s ease-in-out;
+              fill: var(--text-color);
+            }
+          }
+          .chapter__title {
+            transition: all 0.5s ease-in-out;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 120%; /* 19.2px */
+          }
+          &:hover {
+            box-shadow: 0px 0px 24px 3px rgba(0, 0, 0, 0.13);
+            svg {
+              path {
+                fill: var(--green);
+              }
+            }
+            .chapter__title {
+              color: var(--green);
+            }
+          }
+        }
+        .active {
+          background: var(--green);
+          svg {
+            path {
+              fill: var(--page-bg) !important;
+            }
+          }
+          .chapter__title {
+            color: var(--page-bg) !important;
+          }
+        }
+      }
+      .faq__descr {
+        .faq__descr-item {
+          margin-bottom: 35px;
+          .descr__item-title {
+            cursor: pointer;
+            color: var(--text-color-accent);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 120%; /* 28.8px */
+            margin-bottom: 25px;
+          }
+          .descr__item-text {
+            display: none;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 120%; /* 24px */
+            margin-bottom: 35px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid var(--text-color-accent);
+          }
+        }
+        .active {
+          .descr__item-title {
+            color: var(--green);
+            margin-bottom: 15px;
+          }
+          .descr__item-text {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
