@@ -1,24 +1,4 @@
-// import Swiper bundle with all modules installed
-import Swiper from "swiper/bundle";
-
-// import styles bundle
-import "swiper/css/bundle";
-
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  loop: true,
-  slidesPerView: 5,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: "#sliderNext",
-    prevEl: "#sliderPrev",
-  },
-});
+import swiperMenu from "./modules/swiper";
 
 let panelItem = document.querySelectorAll(".faq__descr-item");
 let active = document.getElementsByClassName("activePanel");
@@ -55,3 +35,5 @@ document.addEventListener("click", (e) => {
   const elTabBtn = e.target.closest(".faq__chapter-items");
   showTab(elTabBtn);
 });
+
+swiperMenu();
