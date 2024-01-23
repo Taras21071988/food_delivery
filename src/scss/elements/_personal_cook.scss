@@ -5,6 +5,15 @@
   height: 450px;
   position: relative;
   margin-bottom: 100px;
+  @include mediaTablet {
+    width: 985px;
+    height: 410px;
+    margin: 0 auto;
+  }
+  @include mediaMobile {
+    width: 735px;
+    height: 330px;
+  }
   .personal__text {
     display: flex;
     flex-direction: column;
@@ -12,6 +21,10 @@
     padding-top: 54px;
     gap: 20px;
     max-width: 400px;
+    @include mediaMobile {
+      margin-left: 50px;
+      padding-top: 40px;
+    }
     .personal__title {
       color: var(--page-bg);
       line-height: 100%;
@@ -35,6 +48,12 @@
           opacity: 0;
         }
       }
+      @include mediaTablet {
+        font-size: 50px;
+      }
+      @include mediaMobile {
+        font-size: 35px;
+      }
     }
     .personal__subtitle {
       color: var(--text-color);
@@ -42,12 +61,17 @@
       font-style: normal;
       font-weight: 400;
       line-height: 59px; /* 236% */
+      @include mediaTablet {
+        font-size: 20px;
+      }
+      @include mediaMobile {
+        font-size: 16px;
+      }
     }
     .personal__btn {
       border-radius: 32px;
       background: var(--accent);
       padding: 18px 27px;
-
       color: var(--page-bg);
       font-size: 16px;
       font-style: normal;
@@ -58,22 +82,52 @@
         background: var(--page-bg);
         color: var(--green);
       }
+      @include mediaTablet {
+        font-size: 14px;
+      }
+      @include mediaMobile {
+        padding: 12px 21px;
+        font-size: 12px;
+      }
     }
   }
   .personal__img-mint-big {
     position: absolute;
     top: -140px;
     left: 380px;
+    @include mediaTablet {
+      width: 300px;
+      top: -110px;
+      left: 440px;
+    }
+    @include mediaMobile {
+      width: 210px;
+      top: -75px;
+      left: 320px;
+    }
   }
   .personal__img-mint-small {
     position: absolute;
     bottom: -140px;
     left: -100px;
+    @include mediaTablet {
+      left: -70px;
+    }
   }
   .personal__img-vector {
     position: absolute;
     top: 25px;
     right: 80px;
+    @include mediaTablet {
+      width: 400px;
+      top: 85px;
+      right: 40px;
+    }
+    @include mediaMobile {
+      width: 350px;
+      top: 85px;
+      right: 30px;
+    }
   }
   .personal__img-plate {
     position: absolute;
@@ -81,20 +135,58 @@
     right: -60px;
     max-width: 866px;
     z-index: 10;
+    @include mediaTablet {
+      width: 500px;
+      top: 90px;
+      right: 0;
+    }
+    @include mediaMobile {
+      width: 400px;
+      top: 100px;
+    }
   }
   .personal__img-plateShadow {
     position: absolute;
     top: 0;
     right: 100px;
+    @include mediaTablet {
+      width: 410px;
+      top: 60px;
+      right: 40px;
+    }
+    @include mediaMobile {
+      width: 340px;
+      top: 70px;
+      right: 27px;
+    }
   }
   .personal__img-pepper {
     position: absolute;
     bottom: -135px;
     right: -100px;
+    @include mediaTablet {
+      width: 180px;
+      bottom: -75px;
+      right: -20px;
+    }
+    @include mediaMobile {
+      width: 140px;
+      bottom: -60px;
+    }
   }
   .personal__img-leaf {
     position: absolute;
     bottom: -75px;
     left: 500px;
+    @include mediaTablet {
+      width: 120px;
+      bottom: -75px;
+      left: 500px;
+    }
+    @include mediaMobile {
+      width: 90px;
+      bottom: -55px;
+      left: 410px;
+    }
   }
 }

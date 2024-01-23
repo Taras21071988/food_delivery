@@ -1,6 +1,9 @@
 .header {
   padding-top: 20px;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
+  @include mediaTablet {
+    margin-bottom: 40px;
+  }
 
   &__row {
     display: flex;
@@ -8,6 +11,16 @@
     align-items: center;
     position: relative;
     z-index: 100;
+    @include mediaTablet {
+      justify-content: space-around;
+    }
+    @include mediaMobile {
+      .logo {
+        img {
+          width: 140px;
+        }
+      }
+    }
   }
   .header_btn {
     border-radius: 32px;
@@ -25,6 +38,14 @@
     }
     span {
       color: var(--page-bg);
+    }
+    @include mediaTablet {
+      font-size: 14px;
+      width: 120px;
+      img {
+        width: 32px;
+        margin-right: 10px;
+      }
     }
   }
 }
