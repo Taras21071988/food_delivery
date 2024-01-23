@@ -44,3 +44,11 @@
     scale: 1;
   }
 }
+@keyframes head {
+  0% {
+    transform: translateY(-400%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

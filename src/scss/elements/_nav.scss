@@ -4,6 +4,31 @@ nav {
   align-items: center;
   gap: 70px;
 
+  .nav__menu {
+    transform: translateY(-400%);
+
+    animation: head 1s forwards;
+    animation-delay: 0.3s;
+  }
+  .nav__delivery {
+    transform: translateY(-400%);
+
+    animation: head 1s forwards;
+    animation-delay: 0.6s;
+  }
+  .nav__faq {
+    transform: translateY(-400%);
+
+    animation: head 1s forwards;
+    animation-delay: 0.9s;
+  }
+  .nav__contacts {
+    transform: translateY(-400%);
+
+    animation: head 1s forwards;
+    animation-delay: 1.2s;
+  }
+
   a {
     font-weight: 500;
     color: var(--text-color-accent);
@@ -25,12 +50,11 @@ nav {
     align-items: center;
     font-size: 15px;
     font-weight: 700;
-    transition: transform 0.3s ease-in;
+    transform: translateY(-400%);
+    animation: head 1s forwards;
+    animation-delay: 1.5s;
     img {
       margin-right: 5px;
-    }
-    &:hover {
-      transform: scale(1.2);
     }
   }
 }
