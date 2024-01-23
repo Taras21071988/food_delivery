@@ -36,4 +36,9 @@ document.addEventListener("click", (e) => {
   showTab(elTabBtn);
 });
 
+let li = document.querySelectorAll("li");
+for (let i = 0, len = li.length; i < len; i++) {
+  li[i].style.animationDelay = i / 10.333 + "s";
+}
+
 swiperMenu();

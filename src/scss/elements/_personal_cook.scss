@@ -18,6 +18,23 @@
       font-size: 65px;
       font-weight: 700;
       text-transform: uppercase;
+      ul {
+        display: flex;
+        .list_one {
+          animation: li 1.5s forwards;
+          opacity: 0;
+        }
+        .list_two {
+          animation: li 1.5s forwards;
+          animation-delay: 1.2s;
+          opacity: 0;
+        }
+        .list_three {
+          animation: li 1.5s forwards;
+          animation-delay: 2s;
+          opacity: 0;
+        }
+      }
     }
     .personal__subtitle {
       color: var(--text-color);
