@@ -54,25 +54,27 @@ gulp.task("html:docs", function () {
     .pipe(changed("./docs/"))
     .pipe(plumber(plumberNotify("html")))
     .pipe(fileInclude(fileIncludeSetting))
-    .pipe(webpHTML())
+    // .pipe(webpHTML())
     .pipe(htmlclean())
     .pipe(gulp.dest("./docs/"));
 });
 
 gulp.task("sass:docs", function () {
-  return gulp
-    .src("./src/scss/*.scss")
-    .pipe(changed("./docs/css/"))
-    .pipe(plumber(plumberNotify("Styles")))
-    .pipe(sourceMaps.init())
-    .pipe(autoprefixer())
-    .pipe(sassGlob())
-    .pipe(webpCss())
-    .pipe(groupMedia())
-    .pipe(sass())
-    .pipe(csso())
-    .pipe(sourceMaps.write())
-    .pipe(gulp.dest("./docs/css/"));
+  return (
+    gulp
+      .src("./src/scss/*.scss")
+      .pipe(changed("./docs/css/"))
+      .pipe(plumber(plumberNotify("Styles")))
+      .pipe(sourceMaps.init())
+      // .pipe(autoprefixer())
+      .pipe(sassGlob())
+      // .pipe(webpCss())
+      // .pipe(groupMedia())
+      .pipe(sass())
+      .pipe(csso())
+      .pipe(sourceMaps.write())
+      .pipe(gulp.dest("./docs/css/"))
+  );
 });
 
 gulp.task("images:docs", function () {
