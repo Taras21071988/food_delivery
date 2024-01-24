@@ -6,9 +6,10 @@
   position: relative;
   margin-bottom: 100px;
   @include mediaTablet {
-    width: 985px;
+    width: 960px;
     height: 410px;
-    margin: 0 auto;
+    // margin: 0 auto;
+    margin-bottom: 40px;
   }
   @include mediaMobile {
     width: 735px;

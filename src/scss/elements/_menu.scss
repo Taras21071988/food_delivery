@@ -22,7 +22,7 @@
     #sliderNext {
       position: absolute;
       top: 185px;
-      right: -25px;
+      right: 40px;
       z-index: 111;
     }
   }
@@ -34,6 +34,9 @@
   height: 100%;
   padding: 42px 42px;
   position: relative;
+  @include mediaTablet {
+    width: 960px;
+  }
   .swiper {
     overflow: visible;
   }
